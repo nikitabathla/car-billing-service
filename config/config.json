@@ -1,0 +1,32 @@
+{
+  "port": {
+    "doc": "Port for the server.",
+    "default": 9000,
+    "env": "SERVER_PORT"
+  },
+  "clientId": {
+    "doc": "Kakfa client id.",
+    "default": "my-app",
+    "env": "KAFKA_CLIENT_ID"
+  },
+  "brokers": {
+    "doc": "List of kafka brokers.",
+    "format" : "Array",
+    "default": "localhost:9092",
+    "env": "KAFKA_BROKER_LIST"
+  },
+  "couch_db_host": {
+    "doc": "Host for couch db.",
+    "default": "localhost",
+    "env": "COUCH_DB_HOST"
+  },
+  "couch_db_port": {
+    "doc": "Port for couch db.",
+    "default": 5984,
+    "env": "COUCH_DB_PORT"
+  },
+  "couch_db_name": {
+    "default": "mychannel_car$chaincode",
+    "env": "COUCH_DB_NAME"
+  }
+}
